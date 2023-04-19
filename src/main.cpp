@@ -19,10 +19,10 @@ void loop() {
   if (estadoBotaoAtual != estadoBotaoAnterior) {
     if (estadoBotaoAtual == LOW) {
       Keyboard.press(KEY_LEFT_CTRL); // Segura a tecla "Ctrl"
-      Keyboard.press(KEY_LEFT_ALT); // Segura a tecla "Ctrl"
+      // Keyboard.press(KEY_LEFT_ALT); // Segura a tecla "Ctrl"
     } else {
       Keyboard.release(KEY_LEFT_CTRL); // Solta a tecla "Ctrl"
-      Keyboard.release(KEY_LEFT_ALT); // Solta a tecla "Ctrl"
+      // Keyboard.release(KEY_LEFT_ALT); // Solta a tecla "Ctrl"
     }
 
     estadoBotaoAnterior = estadoBotaoAtual; // Atualiza o estado anterior do botão
